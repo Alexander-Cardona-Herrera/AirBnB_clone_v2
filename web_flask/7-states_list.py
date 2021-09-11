@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+""" Module for the implementation of flask in the AirBnB clone project,
+    looking for a wide comprehension of lasagna code (layered code)
+
+"""
+
+
 from flask import Flask, escape, request, render_template
 
 app = Flask(__name__)
