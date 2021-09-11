@@ -25,7 +25,8 @@ def display_text(text):
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def display_default_text(text='is cool'):
-    """ Method that display the text's pass in route, default case='is cool' """
+    """ Method that display the text's pass in route,
+        default case='is cool' """
     return "Python "+str(text).replace('_', ' ')
 
 
@@ -43,7 +44,8 @@ def display_html(n):
 
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
 def display_odd_html(n):
-    """ Method that display 6-number_odd_or_even.html if an int is pass in route """
+    """ Method that display 6-number_odd_or_even.html
+        if an int is pass in route """
     if (n % 2) == 0:
         n = "{} is even".format(n)
     else:

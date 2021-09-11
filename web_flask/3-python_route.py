@@ -25,7 +25,8 @@ def display_text(text):
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def display_default_text(text='is cool'):
-    """ Method that display the text's pass in route, default case='is cool' """
+    """ Method that display the text's pass in route,
+        default case='is cool' """
     return "Python "+str(text).replace('_', ' ')
 
 
